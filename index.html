@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tênis daora</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    
+    <header class="cabecalho">
+        <div class="logo">Tênis daora</div>
+        
+      
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+        <label for="menu-toggle" class="menu-icon">&#9776;</label>
+
+        <nav class="menu-principal">
+            <ul>
+                <li><a href="index.html">Início</a></li>
+              
+                <li class="dropdown">
+                    <a href="#produtos">Categorias &#9662;</a>
+                    <ul class="dropdown-content">
+                        <li><a href="#">Casual</a></li>
+                        <li><a href="#">Esportivos</a></li>
+                        <li><a href="#">Sapatos</a></li>
+                        <li><a href="#">Estilosos</a></li>
+                    </ul>
+                </li>
+                <li><a href="carrinho.html">Carrinho</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        
+        <section class="banner-destaque">
+            <div class="banner-conteudo">
+                <h1>Sneakers diferentes para você</h1>
+                <p>Cansado de usar marcas que todos usam?</p>
+                <a href="#produtos" class="btn">Ver Lançamentos</a>
+            </div>
+        </section>
+
+        <section id="produtos" class="vitrine">
+            <h2>Destaques geeks</h2>
+            <div class="grid-produtos">
+                
+                <article class="card-produto">
+                    <span class="badge badge-novo">Novo</span>
+                    <img src="https://i.etsystatic.com/36203410/r/il/2e077b/5093674067/il_794xN.5093674067_k6o6.jpg" alt="Tênis Nike Vermelho">
+                    <div class="info-produto">
+                        <h3>Sonic Power EQWorks</h3>
+                        <p class="preco">R$ 689,90</p>
+                        <a href="produto1.html" class="btn-comprar">Ver Detalhes</a>
+                    </div>
+                </article>
+
+                <article class="card-produto">
+                    <span class="badge badge-desconto">-15%</span>
+                    <img src="https://cdn.oneesports.gg/wp-content/uploads/2019/11/capcom-rockman-asics-gel-bind-release-date-2-1024x719.jpg" alt="Tênis Puma Preto e Branco">
+                    <div class="info-produto">
+                        <h3>ASICS' GEL-BND MEGA MAN</h3>
+                        <p class="preco">R$ 549,90</p>
+                        <a href="produto2.html" class="btn-comprar">Ver Detalhes</a>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <section class="video-review">
+            <h2>Review em Destaque</h2>
+            <div class="iframe-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/5OsqXElyhxs" title="Review Tênis" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </section>
+    </main>
+
+    <footer class="rodape">
+        <p>&copy; 2026 temo q mudar. Trabalho Acadêmico.</p>
+    </footer>
+
+</body>
+</html>

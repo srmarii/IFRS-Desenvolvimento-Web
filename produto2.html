@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sonic Power EQWorks</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+   <header class="cabecalho">
+        <div class="logo">Tênis daora</div>
+        
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+        <label for="menu-toggle" class="menu-icon">&#9776;</label>
+
+        <nav class="menu-principal">
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li class="dropdown">
+                    <a href="#produtos">Categorias &#9662;</a>
+                    <ul class="dropdown-content">
+                        <li><a href="#">Casual</a></li>
+                        <li><a href="#">Esportivos</a></li>
+                        <li><a href="#">Sapatos</a></li>
+                        <li><a href="#">Estilosos</a></li>
+                    </ul>
+                </li>
+                <li><a href="carrinho.html">Carrinho</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="container-produto">
+        <section class="galeria">
+            <img src="https://cdn.oneesports.gg/wp-content/uploads/2019/11/capcom-rockman-asics-gel-bind-release-date-2-1024x719.jpg" alt="TENIS DO SONIC" class="img-principal">
+            
+            <div class="thumbnails">
+                <img src="https://cdn.oneesports.gg/wp-content/uploads/2019/11/capcom-rockman-asics-gel-bind-release-date-3-1024x719.jpg" alt="Miniatura 1">
+                <img src="https://cdn.oneesports.gg/wp-content/uploads/2019/11/capcom-rockman-asics-gel-bind-release-date-7-1024x1024.jpg" alt="Miniatura 2">
+                <img src="https://cdn.oneesports.gg/wp-content/uploads/2019/11/capcom-rockman-asics-gel-bind-release-date-5-1024x719.jpg" alt="Miniatura 3">
+            </div>
+        </section>
+
+        <section class="info-detalhe">
+            <span class="badge-estatico">Novo</span>
+            <h1>ASICS' GEL-BND MEGA MAN</h1>
+            <p class="preco-destaque">R$ 549,90</p>
+            
+            <p class="descricao">mega man is the mighty robot.</p>
+            
+            <h3>Características:</h3>
+            <ul class="lista-recursos">
+
+                <li>Cabedal de malha (mesh) para máxima respiração do pé.</li>
+                <li>Sola de borracha para tração durável.</li>
+                <li>Entressola de espuma macia de densidade dupla.</li>
+            </ul>
+
+            <div class="opcoes-compra">
+                <label for="tamanho">Tamanho:</label>
+                <select id="tamanho">
+                    <option value="38">38</option>
+                    <option value="39">39</option>
+                    <option value="40">40</option>
+                    <option value="41">41</option>
+                    <option value="42">42</option>
+                </select>
+
+                <a href="carrinho.html" class="btn btn-block">Adicionar ao Carrinho</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="rodape">
+        <p>&copy; 2026 temo q mudar isso.</p>
+    </footer>
+
+</body>
+</html>

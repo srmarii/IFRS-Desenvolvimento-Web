@@ -1,0 +1,379 @@
+/* ================= Variáveis e Reset ================= */
+:root {
+    --cor-fundo: #f4f4f4;
+    --cor-texto: #111;
+    --cor-primaria: #ff4500;
+    --cor-primaria-hover: #cc3700;
+    --cor-branca: #fff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+    line-height: 1.6;
+}
+
+/* ================= Cabeçalho e Menu (Flex + Position Fixed) ================= */
+.cabecalho {
+    position: fixed; /* Fixa o menu no topo */
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--cor-branca);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 5%;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 900;
+    letter-spacing: -1px;
+}
+
+/* Menu principal com seletores avançados */
+.menu-principal > ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.menu-principal a {
+    text-decoration: none;
+    color: var(--cor-texto);
+    font-weight: 700;
+    transition: color 0.3s;
+}
+
+.menu-principal a:hover {
+    color: var(--cor-primaria);
+}
+
+/* Menu Dropdown (CSS Puro) */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: var(--cor-branca);
+    min-width: 150px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    flex-direction: column;
+}
+
+.dropdown-content li {
+    width: 100%;
+}
+
+.dropdown-content a {
+    padding: 10px 15px;
+    display: block;
+}
+
+
+.dropdown:hover .dropdown-content {
+    display: flex;
+}
+
+
+.menu-toggle, .menu-icon {
+    display: none;
+}
+
+
+.banner-destaque {
+    margin-top: 60px; 
+    height: 70vh;
+    background-image: linear-gradient(rgba(0,0,0,1.0), rgba(0,0,0,0.7)), url('https://galeriebeauchamp.com/cdn/shop/products/sneakerhead-serieseries-galerie-d-art-beauchamp-1.jpg?v=1764035759');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: var(--cor-branca);
+}
+
+.banner-conteudo h1 {
+    font-size: 4rem;
+    margin-bottom: 10px;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 15px 30px;
+    background-color: var(--cor-primaria);
+    color: var(--cor-branca);
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s transform 0.3s;
+}
+
+.btn:hover {
+    background-color: var(--cor-primaria-hover);
+    transform: scale(1.05); 
+}
+
+.vitrine {
+    padding: 60px 5%;
+    text-align: center;
+}
+
+.vitrine h2 {
+    margin-bottom: 40px;
+    font-size: 2.5rem;
+}
+
+.grid-produtos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.card-produto {
+    background: var(--cor-branca);
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative; 
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-produto:hover {
+    transform: translateY(-10px); 
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+.card-produto img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.badge {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    padding: 5px 15px;
+    color: var(--cor-branca);
+    font-size: 0.8rem;
+    font-weight: bold;
+    border-radius: 3px;
+    z-index: 10;
+}
+
+.badge-novo { background-color: var(--cor-primaria); }
+.badge-desconto { background-color: #222; }
+
+.info-produto {
+    padding: 20px;
+}
+
+.preco {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--cor-primaria);
+    margin: 10px 0;
+}
+
+.btn-comprar {
+    display: block;
+    padding: 10px;
+    background-color: var(--cor-texto);
+    color: var(--cor-branca);
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.btn-comprar:hover {
+    background-color: #333;
+}
+
+.video-review {
+    padding: 40px 5%;
+    background-color: var(--cor-branca);
+    text-align: center;
+}
+
+.video-review h2 {
+    margin-bottom: 30px;
+}
+
+.iframe-container {
+    position: relative;
+    padding-bottom: 56.25%; 
+    height: 0;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.iframe-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.rodape {
+    text-align: center;
+    padding: 20px;
+    background-color: var(--cor-texto);
+    color: var(--cor-branca);
+}
+.container-produto {
+    margin: 100px auto 50px auto; 
+    padding: 20px 5%;
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 40px;
+}
+
+.galeria .img-principal {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.thumbnails {
+    display: flex;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.thumbnails img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s;
+    border: 2px solid transparent;
+}
+
+.thumbnails img:hover {
+    transform: scale(1.05);
+    border-color: var(--cor-primaria);
+}
+
+
+.badge-estatico {
+    background-color: var(--cor-primaria);
+    color: var(--cor-branca);
+    padding: 3px 10px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    border-radius: 3px;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.info-detalhe h1 {
+    font-size: 2.5rem;
+    line-height: 1.1;
+    margin-bottom: 10px;
+}
+
+.preco-destaque {
+    font-size: 2rem;
+    color: var(--cor-primaria);
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+
+.descricao {
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+}
+
+.lista-recursos {
+    margin: 10px 0 30px 25px; 
+}
+
+.lista-recursos li {
+    margin-bottom: 8px;
+}
+
+
+.opcoes-compra {
+    background-color: var(--cor-branca);
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+.opcoes-compra select {
+    padding: 8px;
+    font-size: 1rem;
+    margin-left: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.btn-block {
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+.menu-icon {
+        display: block;
+        font-size: 2rem;
+        cursor: pointer;
+    }
+
+    
+    .menu-principal > ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: var(--cor-branca);
+        position: absolute;
+        top: 60px;
+        left: 0;
+        padding: 20px 0;
+        box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    }
+
+    
+    .menu-toggle:checked ~ .menu-principal > ul {
+        display: flex;
+    }
+
+    .dropdown-content {
+        display: flex; 
+        position: static;
+        box-shadow: none;
+        padding-left: 20px;
+    }
+
+    .banner-conteudo h1 {
+        font-size: 2.5rem;
+    }
+}
+
+
+    .container-produto {
+        grid-template-columns: 1fr;
+    }
