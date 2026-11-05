@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tênis daora</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header class="cabecalho">
+        <div><a class="logo" href="Index.html">Tênis Daora</a></div>
+        
+      
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+        <label for="menu-toggle" class="menu-icon">☰</label>
+
+        <nav class="menu-principal">
+            <ul>
+                <li><a href="Index.html">Início</a></li>
+              
+                <li class="dropdown">
+                    <a href="#produtos">Categorias ▼</a>
+                    <ul class="dropdown-content">
+                        <li><a href="#casual">Casual</a></li>
+                        <li><a href="#esportivos">Esportivos</a></li>
+                        <li><a href="#estilosos">Estilosos</a></li>
+                        <li><a href="#moda">Na Moda</a></li>
+                    </ul>
+                </li>
+                <li><a href="Carrinho.html">Carrinho</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="banner-destaque">
+            <div class="banner-conteudo">
+                <h1>Sneakers diferentes para você</h1>
+                <p>Cansado de usar marcas que todos usam?</p>
+                <a href="#produtos" class="btn">Ver Lançamentos</a>
+            </div>
+        </section>
+
+        <section id="produtos" class="vitrine">
+            <h2>Destaques geeks</h2>
+            <div class="grid-produtos">
+                
+                <div id= "estilosos" class="card-produto">
+                    <span class="badge badge-novo">Novo</span>
+                    <img src="./imagens/vermelho1.webp" alt="Tênis Nike Vermelho">
+                    <div class="info-produto">
+                        <h3>Sonic Power EQWorks Sonic</h3>
+                        <p class="preco">R$ 689,90</p>
+                        <a href="Produto1.html" class="btn-comprar">Ver Detalhes</a>
+                    </div>
+                </div>
+
+                <div id="esportivos" class="card-produto">
+                    <span class="badge badge-desconto">-15%</span>
+                    <img src="./imagens/azul1.webp" alt="Tênis Puma Preto e Branco">
+                    <div class="info-produto">
+                        <h3>ASICS' GEL-BND MEGA MAN</h3>
+                        <p class="preco">R$ 549,90</p>
+                        <a href="Produto2.html" class="btn-comprar">Ver Detalhes</a>
+                    </div>
+                </div>
+
+                <div id="moda" class="card-produto">
+                    <img src="./imagens/newbalance1.webp" alt="Tênis New Balance 530 Lifestyle">
+                    <div class="info-produto">
+                        <h3>Tênis New Balance 530</h3>
+                        <p class="preco">R$ 749,90</p>
+                        <a href="Produto3.html" class="btn-comprar">Ver Detalhes</a>
+                    </div>
+                </div>
+
+                <div id="casual" class="card-produto">
+                    <img src="./imagens/vans1.webp" alt="Tênis Vans Old Skool Black White">
+                    <div class="info-produto">
+                        <h3>Tênis Old Skool Black White</h3>
+                        <p class="preco">R$ 399,90</p>
+                        <a href="Produto4.html" class="btn-comprar">Ver Detalhes</a>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+
+        <section> 
+            <h2>Tabela de Medidas de Tamanhos dos Tênis</h2>
+            <table class="tabela-tamanhos">
+                <thead>
+                    <tr>
+                        <th>Tamanho (BR)</th>
+                        <th>Comprimento do Pé (cm)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>35</td>
+                        <td>22,5</td>
+                    </tr>
+                    <tr>
+                        <td>36</td>
+                        <td>23,0</td>
+                    </tr>
+                    <tr>
+                        <td>37</td>
+                        <td>23,5</td>
+                    </tr>
+                    <tr>
+                        <td>38</td>
+                        <td>24,0</td>
+                    </tr>
+                    <tr>
+                        <td>39</td>
+                        <td>24,5</td>
+                    </tr>
+                    <tr>
+                        <td>40</td>
+                        <td>25,0</td>
+                    </tr>
+                    <tr>
+                        <td>41</td>
+                        <td>25,5</td>
+                    </tr>
+                    <tr>
+                        <td>42</td>
+                        <td>26,0</td>
+                    </tr>
+
+                </tbody>
+            </table>
+
+        </section>
+
+         <section class="video-review">
+            <h2>Review em Destaque</h2>
+            <div class="iframe-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/vbxIWqnfh48?si=nrHmZk4DGg8Js9en" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </section>
+    </main>
+
+    <footer class="rodape">
+        <p>&copy; 2026. Trabalho de Desenvolvimento Web de Gabriel e Mariana.</p>
+    </footer>
+
+</body>
+</html>
